@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <h1 id="hl">Pomodoro Clock</h1>
+<!--
+The resting-graph is copied and modifed from google. I do not know the author though. If that does not comply with FCC I would simply remove it
+!-->
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+<div class="bstart">
+  <button onclick="startT()" class="btn" id="btnstart">Start</button>
+  <br>
+  <button onclick="freset()" style="visibility:hidden" class="btn" id="btnreset">Reset</button>
+</div>
+<div class="bleft col-lg-6">
+  <p class="labelSL">Session length (min)</p>
+
+  <button onclick="incSL()" class="btn">&uarr;</button>
+  <h4 id="slength">25</h4>
+  <button onclick="decSL()" class="btn">&darr;</button>
+</div>
+<div class="bright col-lg-6">
+  <p class="labelSL">Break length (min)</p>
+
+  <button onclick="incBL()" class="btn">&uarr;</button>
+  <h4 id="blength">1</h4>
+  <button onclick="decBL()" class="btn">&darr;</button>
+</div>
+</div>
+
+<div class="row">
+  <p style="visibility:hidden" id="btime" class="btimer">TIME</p>
+<div style="visibility:hidden" class="pcircle" id="graph">
+  <div id="load">
+    <div>G</div>
+    <div>N</div>
+    <div>I</div>
+    <div>T</div>
+    <div>S</div>
+    <div>E</div>
+    <div>R</div>
+  </div>
+</div>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
